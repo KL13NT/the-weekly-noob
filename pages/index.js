@@ -20,6 +20,10 @@ export default function Index({ episodes }) {
 					<p className='text-xl mt-8'>
 						يقدمها لكم <a href='https://iamnabil.netlify.app'>نبيل ثروت</a>.
 					</p>
+					<p className='text-xl mt-8'>
+						يمكنكم توجيه اسئلتكم لهذا{' '}
+						<a href='https://forms.gle/9TjeDoWQxiLEHm8eA'>الإستبيان</a>.
+					</p>
 				</div>
 			</header>
 			<hr className='mt-16' />
