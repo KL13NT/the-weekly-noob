@@ -1,21 +1,18 @@
 import React from 'react'
-import Link from 'next/link'
 
 import SEO from '../components/SEO'
 
 const NotFoundPage = () => (
 	<>
-		<SEO title='404: Not found' />
+		<SEO title='404: غير موجود' />
 		<div className='text-center'>
 			<h1>
-				{'<'}NOT_FOUND{'>'}
+				{'<'}غير_موجود{'>'}
 			</h1>
 			<p>
-				You just hit a route that doesn't exist... the sadness.
+				هذه الصفحة غير موجودة
 				<br />
-				<Link href='/'>
-					<a>Go home</a>
-				</Link>
+				<a href='/'>ارجع لصفحة البداية</a>
 			</p>
 		</div>
 	</>

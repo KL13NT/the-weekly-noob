@@ -5,10 +5,7 @@
 	"version": "0.1.0",
 	"author": "Nabil Tharwat",
 	"dependencies": {
-		"@mdx-js/loader": "^1.6.19",
-		"@next/mdx": "^9.5.5",
 		"fast-xml-parser": "^3.17.4",
-		"gray-matter": "^4.0.2",
 		"next": "^9.5.5",
 		"next-compose-plugins": "^2.2.0",
 		"react": "^17.0.1",
