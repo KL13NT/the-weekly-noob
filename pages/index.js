@@ -25,6 +25,9 @@ export default function Index({ episodes }) {
 			<hr className='mt-16' />
 			<article className='md:mt-8'>
 				<ul>
+					{episodes.length === 0 ? (
+						<h2>ترقبوا الحلقة القادمة يوم الثلاثاء 😀</h2>
+					) : null}
 					{episodes.reverse().map(ep => (
 						<li className='list-none text-center'>
 							<a href={ep.link} className='mt-8'>

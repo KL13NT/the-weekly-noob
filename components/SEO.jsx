@@ -11,6 +11,12 @@ function SEO({}) {
 	return (
 		<Head>
 			<title>{title}</title>
+			<link
+				type='application/rss+xml'
+				rel='alternate'
+				title='The Weekly Noob Podcast'
+				href='https://anchor.fm/s/398d61b4/podcast/rss'
+			/>
 			<meta content={title} property='og:title' />
 			<meta content='website' property='og:type' />
 			<meta content={description} name='description' />
