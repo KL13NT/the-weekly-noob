@@ -10,11 +10,8 @@ body
 	text-align: right
 	direction: rtl
 
-h1, h2
-	@apply text-white
-
-h3, h4
-	@apply font-bold max-w-max
+h1, h2, h3, h4
+	@apply font-bold text-white
 
 h1
 	@apply text-4xl
@@ -29,7 +26,7 @@ h4
 	@apply text-xl
 
 p, ul, ol
-	@apply text-lg mt-4
+	@apply text-xl mt-4
 
 a
 	@apply text-link max-w-max
@@ -67,37 +64,6 @@ hr
 	opacity: 0.3
 	height: 1px
 	width: 60%
-
-pre
-	@apply mt-4
-
-code
-	@apply rounded text-white py-0 px-1
-
-pre code
-	@apply max-w-full overflow-auto block p-4
-
-
-// [dir='rtl']
-// 	text-align: right
-// 	direction: rtl
-// 	text-decoration-skip-ink: skip
-// 	letter-spacing: -1px
-
-// 	p, ul, ol
-// 		@apply text-2xl mt-8
-
-// 	h3, h4
-// 		line-height: 2.2
-
-// 	ol li
-// 		list-style-type: arabic-indic
-
-// 	h3, h4
-// 		padding-bottom: 4px
-
-// 	@apply font-rtl
-
 
 @media (min-width: 768px)
 	h1

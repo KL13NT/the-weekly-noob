@@ -1,48 +1,36 @@
 import React from 'react'
 import Head from 'next/head'
 
-const hostname = 'https://iamnabil.netlify.app'
+const url = 'https://the-weekly-noob.vercel.app'
 
-const defaultTitle = 'Nabil Tharwat'
-const defaultDescription = 'Frontend Software Engineer, Blogger, Mentor'
-const defaultOGImagePath = '/og.png'
-const defaultPath = '/'
+const title = 'المبتدئ الاسبوعي | The Weekly Noob'
+const description =
+	'مدونة صوتية اسبوعية (كل ثلاثاء) تغطي كل جديد في عالم تطوير البرمجيات وتطرَّقَ لمواضيع هامة للطلبة.'
+const og = '/og.webp'
 
-function SEO({
-	title,
-	lang,
-	description = defaultDescription,
-	path = defaultPath
-}) {
-	const ogImageUrl = `${hostname}${defaultOGImagePath}`
-	const url = `${hostname}${path}`
-	const finalTitle = title
-		? title + (lang === 'ar' ? ' | نبيل ثروت' : ' | Nabil Tharwat')
-		: defaultTitle
-
+function SEO({}) {
 	return (
 		<Head>
-			<title>{finalTitle}</title>
-			<meta content={finalTitle} property='og:title' />
+			<title>{title}</title>
+			<meta content={title} property='og:title' />
 			<meta content='website' property='og:type' />
 			<meta content={description} name='description' />
 			<meta content={description} property='og:description' />
 			<meta content={url} property='og:url' />
 			<meta content='Nabil Tharwat' property='og:site_name' />
-			<meta content={ogImageUrl} property='og:image' />
+			<meta content={og} property='og:image' />
 			<meta content={'image/jpeg'} property='og:image:type' />
-			<meta content={ogImageUrl} property='og:image:url' />
-			<meta content={ogImageUrl} property='og:image:secure_url' />
+			<meta content={og} property='og:image:url' />
+			<meta content={og} property='og:image:secure_url' />
 			<meta content='summary_large_image' name='twitter:card'></meta>
-			<meta content={finalTitle} property='twitter:title' />
+			<meta content={title} property='twitter:title' />
 			<meta content={description} property='twitter:description' />
 			<meta content='@Nabil_Tharwat' property='twitter:creator' />
 			<meta content='@Nabil_Tharwat16' property='twitter:site' />
-			<meta content={ogImageUrl} property='twitter:image' />
+			<meta content={og} property='twitter:image' />
 			<html lang='en-GB' />
 
-			{/* ICONS */}
-
+			<link rel='manifest' href='/site.webmanifest' />
 			<link
 				rel='apple-touch-icon'
 				sizes='180x180'
@@ -60,14 +48,10 @@ function SEO({
 				sizes='16x16'
 				href='/icons/favicon-16x16.png'
 			/>
-			<link rel='manifest' href='/icons/site.webmanifest' />
-			<link
-				rel='mask-icon'
-				href='/icons/safari-pinned-tab.svg'
-				color='#5bbad5'
-			/>
 			<link rel='shortcut icon' href='/icons/favicon.ico' />
-			<meta name='msapplication-TileColor' content='#f3f7f9' />
+			<meta name='apple-mobile-web-app-title' content='The Weekly Noob' />
+			<meta name='application-name' content='The Weekly Noob' />
+			<meta name='msapplication-TileColor' content='#8a27a2' />
 			<meta
 				name='msapplication-TileImage'
 				content='/icons/mstile-144x144.png'

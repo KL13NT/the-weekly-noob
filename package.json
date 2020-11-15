@@ -1,7 +1,7 @@
 {
-	"name": "blog",
+	"name": "the-weekly-noob",
 	"private": true,
-	"description": "A quick and easy to make personal blog",
+	"description": "A weekly podcast brought to you by Nabil Tharwat",
 	"version": "0.1.0",
 	"author": "Nabil Tharwat",
 	"dependencies": {

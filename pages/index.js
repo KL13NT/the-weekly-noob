@@ -3,14 +3,17 @@ import React from 'react'
 
 import SEO from '../components/SEO'
 
-export default function Blog({ episodes }) {
+export default function Index({ episodes }) {
 	return (
 		<>
-			<SEO title='Blog' />
-			<header className='flex flex-col items-center text-center'>
-				<img src='/tag.webp' className='w-4/5' />
+			<SEO />
+			<header className='flex flex-col md:flex-row items-center text-center md:text-right'>
+				<picture className='w-4/5 md:ml-8'>
+					<source srcSet='/tag.webp' />
+					<img src='/tag.png' alt='Header image' />
+				</picture>
 				<div>
-					<p className='text-2xl'>
+					<p>
 						مدونة صوتية اسبوعية (كل ثلاثاء) تغطي كل جديد في عالم تطوير البرمجيات
 						وتطرَّقَ لمواضيع هامة للطلبة.
 					</p>
@@ -19,22 +22,29 @@ export default function Blog({ episodes }) {
 					</p>
 				</div>
 			</header>
-			<article>
+			<hr className='mt-16' />
+			<article className='md:mt-8'>
 				<ul>
-					{episodes.map((ep, index) => (
+					{episodes.reverse().map(ep => (
 						<li className='list-none text-center'>
-							<hr />
-							<h4 className='mt-8' dir='auto'>
-								{ep.title}
-							</h4>
+							<a href={ep.link} className='mt-8'>
+								<span className='text-link text-2xl'>
+									الحلقة #{' '}
+									{Number(ep['itunes:episode']).toLocaleString('ar-EG')}
+								</span>
+								<h2 className='text-2xl' dir='auto'>
+									{ep.title}
+								</h2>
+							</a>
 							<p>
-								الحلقة {(index + 1).toLocaleString('ar-EG')} —{' '}
+								—{' '}
 								{new Date(ep.pubDate).toLocaleDateString('ar-EG', {
 									day: 'numeric',
 									weekday: 'long',
 									month: 'long',
 									year: 'numeric'
-								})}
+								})}{' '}
+								—
 							</p>
 							<audio
 								className='mx-auto mt-4'
@@ -48,15 +58,25 @@ export default function Blog({ episodes }) {
 									__html: ep.description || ep['itunes:summary']
 								}}
 							/>
+							<hr className='mt-16' />
 						</li>
 					))}
 				</ul>
 			</article>
 			<footer className='mt-16 text-center'>
 				<p className='text-sm'>
-					الاستضافة باستخدام <a href='https://vercel.com'>Vercel</a>. مفتوح
-					المصدر على{' '}
-					<a href='https://github.com/kl13nt/the-weekly-noob'>GitHub</a>.
+					الاستضافة باستخدام{' '}
+					<a href='https://vercel.com' className='text-white'>
+						Vercel
+					</a>
+					. مفتوح المصدر على{' '}
+					<a
+						href='https://github.com/kl13nt/the-weekly-noob'
+						className='text-white'
+					>
+						GitHub
+					</a>
+					.
 				</p>
 			</footer>
 		</>
