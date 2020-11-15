@@ -66,8 +66,8 @@ export default function Index({ episodes }) {
 			<footer className='mt-16 text-center'>
 				<p className='text-sm'>
 					الاستضافة باستخدام{' '}
-					<a href='https://vercel.com' className='text-white'>
-						Vercel
+					<a href='https://netlify.com' className='text-white'>
+						Netlify
 					</a>
 					. مفتوح المصدر على{' '}
 					<a
