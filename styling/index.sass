@@ -1,0 +1,113 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap')
+
+body
+	@apply text-white bg-black
+	background: url(/background.jpg) repeat
+	text-align: right
+	direction: rtl
+
+h1, h2
+	@apply text-white
+
+h3, h4
+	@apply font-bold max-w-max
+
+h1
+	@apply text-4xl
+
+h2
+	@apply text-3xl
+
+h3
+	@apply text-2xl
+
+h4
+	@apply text-xl
+
+p, ul, ol
+	@apply text-lg mt-4
+
+a
+	@apply text-link max-w-max
+
+	&:hover, &:active, &:focus
+		@apply underline
+
+li
+	@apply mt-4
+
+ul, ol
+	@apply p-4 mt-0
+
+ul li
+	list-style-type: square
+
+ol li
+	list-style-type: decimal-leading-zero
+
+article img
+	@apply max-h-screen m-auto
+
+blockquote
+	@apply p-12 border-solid border-l-2 border-black m-8
+
+	p cite
+		@apply text-lg font-normal
+
+	p
+		@apply text-2xl font-bold
+
+hr
+	margin: 0 auto
+	background: black
+	opacity: 0.3
+	height: 1px
+	width: 60%
+
+pre
+	@apply mt-4
+
+code
+	@apply rounded text-white py-0 px-1
+
+pre code
+	@apply max-w-full overflow-auto block p-4
+
+
+// [dir='rtl']
+// 	text-align: right
+// 	direction: rtl
+// 	text-decoration-skip-ink: skip
+// 	letter-spacing: -1px
+
+// 	p, ul, ol
+// 		@apply text-2xl mt-8
+
+// 	h3, h4
+// 		line-height: 2.2
+
+// 	ol li
+// 		list-style-type: arabic-indic
+
+// 	h3, h4
+// 		padding-bottom: 4px
+
+// 	@apply font-rtl
+
+
+@media (min-width: 768px)
+	h1
+		@apply text-6xl
+
+	h2
+		@apply text-5xl
+
+	h3
+		@apply text-2xl
+
+	h4
+		@apply text-xl

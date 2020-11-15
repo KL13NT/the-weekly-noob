@@ -1,0 +1,42 @@
+{
+	"name": "blog",
+	"private": true,
+	"description": "A quick and easy to make personal blog",
+	"version": "0.1.0",
+	"author": "Nabil Tharwat",
+	"dependencies": {
+		"@mdx-js/loader": "^1.6.19",
+		"@next/mdx": "^9.5.5",
+		"fast-xml-parser": "^3.17.4",
+		"gray-matter": "^4.0.2",
+		"next": "^9.5.5",
+		"next-compose-plugins": "^2.2.0",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-markdown": "^5.0.2",
+		"tailwindcss": "^1.9.6"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-class-properties": "^7.4.4",
+		"@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.1",
+		"@babel/plugin-proposal-optional-chaining": "^7.10.1",
+		"eslint": "^6.5.1",
+		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-react": "^7.21.5",
+		"node-sass": "^4.13.1",
+		"postcss-preset-env": "^6.7.0",
+		"prettier": "^1.18.2",
+		"sass-lint": "^1.13.1"
+	},
+	"license": "MIT",
+	"scripts": {
+		"develop": "next dev",
+		"build": "next build && next export",
+		"start": "next start",
+		"format": "prettier --write src/**/*.{js,jsx}",
+		"lint": "eslint --ext .jsx --ext .js src/ --fix --config ./.eslintrc.js"
+	},
+	"repository": {
+		"type": "git"
+	}
+}
