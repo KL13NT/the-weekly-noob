@@ -105,3 +105,7 @@ export async function getStaticProps() {
 		props: { episodes: rss.channel.item }
 	}
 }
+
+export const config = {
+	unstable_runtimeJS: false
+}
