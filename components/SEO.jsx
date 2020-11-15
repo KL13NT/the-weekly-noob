@@ -4,8 +4,7 @@ import Head from 'next/head'
 const url = 'https://the-weekly-noob.vercel.app'
 
 const title = 'المبتدئ الاسبوعي | The Weekly Noob'
-const description =
-	'مدونة صوتية اسبوعية (كل ثلاثاء) تغطي كل جديد في عالم تطوير البرمجيات وتطرَّقَ لمواضيع هامة للطلبة.'
+const description = 'مدونة صوتية اسبوعية (كل ثلاثاء) يقدمها نبيل ثروت.'
 const og = '/og.webp'
 
 function SEO({}) {

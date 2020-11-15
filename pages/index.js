@@ -18,7 +18,7 @@ export default function Index({ episodes }) {
 						وتطرَّقَ لمواضيع هامة للطلبة.
 					</p>
 					<p className='text-xl mt-8'>
-						يقدمها لكم <a href='https://iamnabil.netlify.app'>نبيل ثروت</a>
+						يقدمها لكم <a href='https://iamnabil.netlify.app'>نبيل ثروت</a>.
 					</p>
 				</div>
 			</header>
