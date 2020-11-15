@@ -4,6 +4,9 @@
 	"description": "A weekly podcast brought to you by Nabil Tharwat",
 	"version": "0.1.0",
 	"author": "Nabil Tharwat",
+	"engines": {
+		"node": "14.x"
+	},
 	"dependencies": {
 		"@mdx-js/loader": "^1.6.19",
 		"@next/mdx": "^9.5.5",
