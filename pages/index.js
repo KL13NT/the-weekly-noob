@@ -69,12 +69,21 @@ export default function Index({ episodes }) {
 			<footer className='mt-16 text-center'>
 				<p className='text-sm'>
 					الاستضافة باستخدام{' '}
-					<a href='https://netlify.com' className='text-white'>
+					<a
+						href='https://netlify.com'
+						rel='noopener'
+						target='_blank'
+						referrerPolicy='no-referrer'
+						className='text-white'
+					>
 						Netlify
 					</a>
 					. مفتوح المصدر على{' '}
 					<a
 						href='https://github.com/kl13nt/the-weekly-noob'
+						rel='noopener'
+						target='_blank'
+						referrerPolicy='no-referrer'
 						className='text-white'
 					>
 						GitHub
