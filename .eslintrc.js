@@ -24,6 +24,7 @@ module.exports = {
 	rules: {
 		indent: 0,
 		'linebreak-style': 0,
+		'react/react-in-jsx-scope': 0,
 		'react-hooks/exhaustive-deps': 0,
 		'react/no-unescaped-entities': 0,
 		'react/jsx-curly-spacing': 0,

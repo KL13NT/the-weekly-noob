@@ -12,7 +12,7 @@ function App({ Component, pageProps }) {
 				<a
 					href={link}
 					className='underline'
-					rel='noopener'
+					rel='noreferrer'
 					target='_blank'
 					referrerPolicy='no-referrer'
 				>

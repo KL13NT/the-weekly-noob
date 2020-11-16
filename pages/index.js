@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 import parser from 'fast-xml-parser'
 import React from 'react'
 
@@ -10,7 +11,7 @@ export default function Index({ episodes }) {
 			<header className='flex flex-col md:flex-row items-center text-center md:text-right'>
 				<picture className='w-4/5 md:ml-8'>
 					<source srcSet='/tag.webp' />
-					<img src='/tag.png' alt='Header image' />
+					<img src='/tag.png' alt='Header' />
 				</picture>
 				<div>
 					<p>
@@ -30,10 +31,15 @@ export default function Index({ episodes }) {
 			<article className='md:mt-8'>
 				<ul>
 					{episodes.length === 0 ? (
-						<h2>ترقبوا الحلقة القادمة يوم الثلاثاء 😀</h2>
+						<h2>
+							ترقبوا الحلقة القادمة يوم الثلاثاء{' '}
+							<span role='img' aria-label='Grinning face'>
+								😀
+							</span>
+						</h2>
 					) : null}
 					{episodes.reverse().map(ep => (
-						<li className='list-none text-center'>
+						<li className='list-none text-center' key={ep.guid}>
 							<a href={ep.link} className='mt-8'>
 								<span className='text-link text-2xl'>
 									الحلقة #{' '}
@@ -75,7 +81,7 @@ export default function Index({ episodes }) {
 					الاستضافة باستخدام{' '}
 					<a
 						href='https://netlify.com'
-						rel='noopener'
+						rel='noreferrer'
 						target='_blank'
 						referrerPolicy='no-referrer'
 						className='text-white'
@@ -85,7 +91,7 @@ export default function Index({ episodes }) {
 					. مفتوح المصدر على{' '}
 					<a
 						href='https://github.com/kl13nt/the-weekly-noob'
-						rel='noopener'
+						rel='noreferrer'
 						target='_blank'
 						referrerPolicy='no-referrer'
 						className='text-white'

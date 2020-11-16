@@ -7,7 +7,7 @@ const title = 'المبتدئ الاسبوعي | The Weekly Noob'
 const description = 'مدونة صوتية اسبوعية (كل ثلاثاء) يقدمها نبيل ثروت.'
 const og = '/og.webp'
 
-function SEO({}) {
+function SEO() {
 	return (
 		<Head>
 			<title>{title}</title>
@@ -34,6 +34,11 @@ function SEO({}) {
 			<meta content='@Nabil_Tharwat16' property='twitter:site' />
 			<meta content={og} property='twitter:image' />
 			<html lang='en-GB' />
+
+			<link
+				href='https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap'
+				rel=''
+			/>
 
 			<link rel='manifest' href='/site.webmanifest' />
 			<link
