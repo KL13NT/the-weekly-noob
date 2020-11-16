@@ -29,10 +29,11 @@
 	"license": "MIT",
 	"scripts": {
 		"develop": "next dev",
+		"prebuild": "yarn lint",
 		"build": "next build && next export",
 		"start": "next start",
 		"format": "prettier --write src/**/*.{js,jsx}",
-		"lint": "eslint --ext .jsx --ext .js src/ --fix --config ./.eslintrc.js"
+		"lint": "eslint --ext .jsx --ext .js ./pages/**/* ./components/**/* --config ./.eslintrc.js"
 	},
 	"repository": {
 		"type": "git"
