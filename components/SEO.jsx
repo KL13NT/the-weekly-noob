@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-const url = 'https://the-weekly-noob.vercel.app'
+const url = 'https://theweeklynoob.netlify.app'
 
 const title = 'المبتدئ الاسبوعي | The Weekly Noob'
 const description = 'مدونة صوتية اسبوعية (كل ثلاثاء) يقدمها نبيل ثروت.'
