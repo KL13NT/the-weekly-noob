@@ -25,6 +25,46 @@ export default function Index({ episodes }) {
 						يمكنكم توجيه اسئلتكم لهذا{' '}
 						<a href='https://forms.gle/9TjeDoWQxiLEHm8eA'>الإستبيان</a>.
 					</p>
+					<div className='mt-8 flex'>
+						<a href='https://www.breaker.audio/the-weekly-noob'>
+							<img
+								src='/breaker.svg'
+								alt='available on Breaker'
+								className='ml-4 w-8'
+							/>
+						</a>
+						<a href='https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8zOThkNjFiNC9wb2RjYXN0L3Jzcw=='>
+							<img
+								src='/google-podcasts.svg'
+								alt='available on Google Podcasts'
+								className='ml-4 w-8'
+							/>
+						</a>
+						<a href='https://pca.st/5jlhy563'>
+							<img
+								src='/pocket_casts.svg'
+								alt='available on PocketCasts'
+								className='ml-4 w-8'
+							/>
+						</a>
+						<a href='https://radiopublic.com/the-weekly-noob-6pkXeN'>
+							<img
+								src='/radiopublic.svg'
+								alt='available on RadioPublic'
+								className='ml-4 w-8'
+							/>
+						</a>
+						<a href='https://open.spotify.com/show/01Fkw58Q5S8JHmnt5PPJ1g'>
+							<img
+								src='/spotify.svg'
+								alt='available on Spotify'
+								className='ml-4 w-8'
+							/>
+						</a>
+						<a href='https://anchor.fm/s/398d61b4/podcast/rss'>
+							<img src='/rss.svg' alt='RSS feed' className='ml-4 w-8' />
+						</a>
+					</div>
 				</div>
 			</header>
 			<hr className='mt-16' />
@@ -38,7 +78,7 @@ export default function Index({ episodes }) {
 							</span>
 						</h2>
 					) : null}
-					{episodes.reverse().map(ep => (
+					{episodes.map(ep => (
 						<li className='list-none text-center' key={ep.guid}>
 							<a href={ep.link} className='mt-8'>
 								<span className='text-link text-2xl'>
