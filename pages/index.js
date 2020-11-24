@@ -25,44 +25,59 @@ export default function Index({ episodes }) {
 						يمكنكم توجيه اسئلتكم لهذا{' '}
 						<a href='https://forms.gle/9TjeDoWQxiLEHm8eA'>الإستبيان</a>.
 					</p>
-					<div className='mt-8 flex'>
-						<a href='https://www.breaker.audio/the-weekly-noob'>
+					<div className='mt-8 flex justify-center md:justify-start'>
+						<a
+							className='block ml-4'
+							href='https://www.breaker.audio/the-weekly-noob'
+						>
 							<img
 								src='/breaker.svg'
 								alt='available on Breaker'
-								className='ml-4 w-8'
+								className='w-8'
 							/>
 						</a>
-						<a href='https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8zOThkNjFiNC9wb2RjYXN0L3Jzcw=='>
+						<a
+							className='block ml-4'
+							href='https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8zOThkNjFiNC9wb2RjYXN0L3Jzcw=='
+						>
 							<img
 								src='/google-podcasts.svg'
 								alt='available on Google Podcasts'
-								className='ml-4 w-8'
+								className='w-8'
 							/>
 						</a>
-						<a href='https://pca.st/5jlhy563'>
+						<a className='block ml-4' href='https://pca.st/5jlhy563'>
 							<img
 								src='/pocket_casts.svg'
 								alt='available on PocketCasts'
-								className='ml-4 w-8'
+								className='w-8'
 							/>
 						</a>
-						<a href='https://radiopublic.com/the-weekly-noob-6pkXeN'>
+						<a
+							className='block ml-4'
+							href='https://radiopublic.com/the-weekly-noob-6pkXeN'
+						>
 							<img
 								src='/radiopublic.svg'
 								alt='available on RadioPublic'
-								className='ml-4 w-8'
+								className='w-8'
 							/>
 						</a>
-						<a href='https://open.spotify.com/show/01Fkw58Q5S8JHmnt5PPJ1g'>
+						<a
+							className='block ml-4'
+							href='https://open.spotify.com/show/01Fkw58Q5S8JHmnt5PPJ1g'
+						>
 							<img
 								src='/spotify.svg'
 								alt='available on Spotify'
-								className='ml-4 w-8'
+								className='w-8'
 							/>
 						</a>
-						<a href='https://anchor.fm/s/398d61b4/podcast/rss'>
-							<img src='/rss.svg' alt='RSS feed' className='ml-4 w-8' />
+						<a
+							className='block ml-4'
+							href='https://anchor.fm/s/398d61b4/podcast/rss'
+						>
+							<img src='/rss.svg' alt='RSS feed' className='w-8' />
 						</a>
 					</div>
 				</div>
