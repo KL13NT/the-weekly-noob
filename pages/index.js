@@ -65,16 +65,6 @@ export default function Index({ episodes }) {
 						</a>
 						<a
 							className='block ml-4'
-							href='https://open.spotify.com/show/01Fkw58Q5S8JHmnt5PPJ1g'
-						>
-							<img
-								src='/spotify.svg'
-								alt='available on Spotify'
-								className='w-8'
-							/>
-						</a>
-						<a
-							className='block ml-4'
 							href='https://anchor.fm/s/398d61b4/podcast/rss'
 						>
 							<img src='/rss.svg' alt='RSS feed' className='w-8' />
