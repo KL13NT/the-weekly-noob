@@ -3,7 +3,7 @@ import Banner from '../components/Banner'
 import '../styling/index.sass'
 
 const link =
-	'https://www.aljazeera.com./news/2020/10/25/social-meboycott-french-products-online-against-macrons-islam'
+	'https://twitter.com/trtworld/status/1391030130886201347'
 
 function App({ Component, pageProps }) {
 	return (
@@ -16,7 +16,7 @@ function App({ Component, pageProps }) {
 					target='_blank'
 					referrerPolicy='no-referrer'
 				>
-					# مقاطعة المنتجات الفرنسية
+					# SaveSheikhJarrah 🇵🇸
 				</a>
 			</Banner>
 			<div className='font-display p-4 py-8 lg:p-8 lg:p-12 min-h-screen'>
