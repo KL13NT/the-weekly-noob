@@ -16,7 +16,7 @@ function App({ Component, pageProps }) {
 					target='_blank'
 					referrerPolicy='no-referrer'
 				>
-					# SaveSheikhJarrah 🇵🇸
+					# SaveSheikhJarrah <span role="img" aria-label="palestinian flag">🇵🇸</span>
 				</a>
 			</Banner>
 			<div className='font-display p-4 py-8 lg:p-8 lg:p-12 min-h-screen'>
