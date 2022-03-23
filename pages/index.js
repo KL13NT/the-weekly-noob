@@ -38,6 +38,16 @@ export default function Index({ episodes }) {
 						</a>
 						<a
 							className='block ml-4'
+							href='https://open.spotify.com/show/01Fkw58Q5S8JHmnt5PPJ1g'
+						>
+							<img
+								src='/spotify.svg'
+								alt='available on Spotify'
+								className='w-8'
+							/>
+						</a>
+						<a
+							className='block ml-4'
 							href='https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8zOThkNjFiNC9wb2RjYXN0L3Jzcw=='
 						>
 							<img
