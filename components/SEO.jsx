@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 const url = 'https://theweeklynoob.netlify.app'
 
-const title = 'المبتدئ الاسبوعي | The Weekly Noob'
+const title = 'The Weekly Noob'
 const description = 'مدونة صوتية اسبوعية (كل ثلاثاء) يقدمها نبيل ثروت.'
 const og = '/og.webp'
 
