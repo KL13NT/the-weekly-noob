@@ -9,6 +9,11 @@ const link = 'https://twitter.com/trtworld/status/1391030130886201347'
 function App({ Component, pageProps }) {
 	return (
 		<>
+			<script
+				defer
+				src='https://static.cloudflareinsights.com/beacon.min.js'
+				data-cf-beacon='{"token": "47c31041115843f99fe9e570c8c52496"}'
+			></script>
 			<Banner>
 				<a
 					href={link}
