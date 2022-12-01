@@ -2,12 +2,15 @@ import React from 'react'
 import Head from 'next/head'
 
 const url = 'https://theweeklynoob.netlify.app'
-
-const title = 'The Weekly Noob'
-const description = 'مدونة صوتية اسبوعية (كل ثلاثاء) يقدمها نبيل ثروت.'
+const defaultTitle = 'The Weekly Noob'
+const defaultDescription = 'مدونة صوتية اسبوعية (كل ثلاثاء) يقدمها نبيل ثروت.'
 const og = '/og.webp'
 
-function SEO() {
+function SEO({
+	path = '',
+	title = defaultTitle,
+	description = defaultDescription
+}) {
 	return (
 		<Head>
 			<title>{title}</title>
@@ -21,7 +24,7 @@ function SEO() {
 			<meta content='website' property='og:type' />
 			<meta content={description} name='description' />
 			<meta content={description} property='og:description' />
-			<meta content={url} property='og:url' />
+			<meta content={`${url}/${path}`} property='og:url' />
 			<meta content='Nabil Tharwat' property='og:site_name' />
 			<meta content={og} property='og:image' />
 			<meta content={'image/jpeg'} property='og:image:type' />
