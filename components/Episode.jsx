@@ -10,9 +10,9 @@ function EpisodeContainer({ link, children }) {
 	} else return <div className='mt-8'>{children}</div>
 }
 
-function Episode({ episode, link }) {
+export function EpisodeIntro({ episode, link }) {
 	return (
-		<div className='text-center' key={episode.guid}>
+		<>
 			<EpisodeContainer link={link}>
 				<span className='text-link text-2xl'>
 					الحلقة # {Number(episode['itunes:episode']).toLocaleString('ar-EG')}
@@ -34,6 +34,17 @@ function Episode({ episode, link }) {
 			<a href={episode.link} className='text-xl block mt-4 mx-auto'>
 				رابط الحلقة على Anchor
 			</a>
+		</>
+	)
+}
+
+function Episode({ episode, link }) {
+	return (
+		<div className='' key={episode.guid}>
+			<div className='text-center'>
+				<EpisodeIntro episode={episode} link={link} />
+			</div>
+
 			<audio
 				className='mx-auto mt-4'
 				src={episode.enclosure['@_url']}

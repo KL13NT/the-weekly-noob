@@ -1,5 +1,5 @@
 import React from 'react'
-import Episode from '../components/Episode'
+import { EpisodeIntro } from '../components/Episode'
 
 import SEO from '../components/SEO'
 import { loadRSSFeedFromDisk, loadRSSFeedToDisk } from '../lib'
@@ -8,7 +8,7 @@ export default function Index({ episodes }) {
 	return (
 		<>
 			<SEO />
-			<article className='md:mt-8'>
+			<article>
 				<ul>
 					{episodes.length === 0 ? (
 						<h2>
@@ -19,8 +19,10 @@ export default function Index({ episodes }) {
 						</h2>
 					) : null}
 					{episodes.map(ep => (
-						<li className='list-none m-0' key={ep.id}>
-							<Episode episode={ep} link={`/episodes/${ep.id}`} listing />
+						<li className='list-none m-0 text-center mt-16' key={ep.id}>
+							<EpisodeIntro episode={ep} link={`/episodes/${ep.id}`} listing />
+
+							<hr className='mt-16' />
 						</li>
 					))}
 				</ul>
