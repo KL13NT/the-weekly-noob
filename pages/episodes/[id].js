@@ -5,7 +5,10 @@ import { getItem, loadRSSFeedFromDisk, loadRSSFeedToDisk } from '../../lib'
 export default function EpisodePage({ episode }) {
 	return (
 		<>
-			<SEO path={`/episodes/${episode.id}`} title={episode.title} />
+			<SEO
+				path={`/episodes/${episode.id}`}
+				title={`الحلقة #${episode.id} - ${episode.title}`}
+			/>
 
 			<article className='md:mt-8'>
 				<Episode episode={episode} />
