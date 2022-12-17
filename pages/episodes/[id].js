@@ -5,11 +5,7 @@ import { getItem, loadRSSFeedFromDisk, loadRSSFeedToDisk } from '../../lib'
 export default function EpisodePage({ episode }) {
 	return (
 		<>
-			<SEO
-				path={`/episodes/${episode.id}`}
-				title={`Episode ${episode.id}`}
-				description={episode.description || episode['itunes:summary']}
-			/>
+			<SEO path={`/episodes/${episode.id}`} title={episode.title} />
 
 			<article className='md:mt-8'>
 				<Episode episode={episode} />
