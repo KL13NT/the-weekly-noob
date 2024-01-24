@@ -28,7 +28,7 @@
 	},
 	"license": "MIT",
 	"scripts": {
-		"develop": "next dev",
+		"dev": "next dev",
 		"prebuild": "yarn lint",
 		"build": "next build && next export",
 		"start": "next start",

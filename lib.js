@@ -20,7 +20,8 @@ export async function loadRSSFeedToDisk() {
 			...parsed.rss.channel,
 			item: parsed.rss.channel.item.map((item, index) => ({
 				...item,
-				id: index + 1
+				id: index + 1,
+				season: item['itunes:summary']
 			}))
 		}
 	}

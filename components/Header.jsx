@@ -8,11 +8,18 @@ function Header() {
 				</picture>
 				<div>
 					<p>
-						مدونة صوتية اسبوعية (كل ثلاثاء) تغطي كل جديد في عالم تطوير البرمجيات
+						مدونة صوتية غير اسبوعية تغطي كل جديد في عالم تطوير البرمجيات
 						وتطرَّقَ لمواضيع هامة للطلبة.
 					</p>
 					<p className='text-xl mt-8'>
 						يقدمها لكم <a href='https://iamnabil.netlify.app'>نبيل ثروت</a>.
+					</p>
+					<p className='text-xl mt-8'>
+						يمكنكم الاشتراك في النشرة الاسبوعية (Newsletter){' '}
+						<a href='https://iamnabil.netlify.app/newsletter'>
+							Rendezvous with Nabil
+						</a>
+						.
 					</p>
 					<p className='text-xl mt-8'>
 						يمكنكم توجيه اسئلتكم لهذا{' '}
