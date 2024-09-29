@@ -15,7 +15,7 @@ export function EpisodeIntro({ episode, link }) {
 		<>
 			<EpisodeContainer link={link}>
 				<span className='text-link text-2xl'>
-					الحلقة # {Number(episode['itunes:episode']).toLocaleString('ar-EG')}
+					الموسم {Number(episode['itunes:season'] ?? 1)} الحلقة # {Number(episode['itunes:episode']).toLocaleString('ar-EG')}
 				</span>
 				<h2 className='text-2xl' dir='auto'>
 					{episode.title}
